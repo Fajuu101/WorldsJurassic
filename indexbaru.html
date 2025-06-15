@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jurassic World</title>
+    <style>
+        body {
+            background-color: #0d0d0d;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ffd700;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: red;
+        }
+
+        h1, h2 {
+            color: #ffd700;
+            text-align: center;
+        }
+
+        .section {
+            padding: 40px 20px;
+        }
+
+        .character-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+            padding: 0 20px;
+        }
+
+        .character-card {
+            background-color: #1a1a1a;
+            border: 2px solid #e60026;
+            border-radius: 15px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .character-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px #e60026;
+        }
+
+        .character-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .character-card h3 {
+            margin: 0;
+            color: #ffcc00;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: #999;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <h1>Jurassic World</h1>
+        <nav>
+            <a href="#movies">Movies</a>
+            <a href="#dinosaurs">Dinosaurs</a>
+        </nav>
+    </header>
+
+    <!-- Section Movies -->
+    <section id="movies" class="section">
+        <h2>Jurassic World Movies</h2>
+        <div class="character-grid">
+            <div class="character-card">
+                <img src="https://upload.wikimedia.org/wikipedia/en/e/e7/Jurassic_World_poster.jpg" alt="Jurassic World">
+                <h3>Jurassic World (2015)</h3>
+            </div>
+            <div class="character-card">
+                <img src="https://upload.wikimedia.org/wikipedia/en/c/c4/Jurassic_World_Fallen_Kingdom.png" alt="Fallen Kingdom">
+                <h3>Fallen Kingdom (2018)</h3>
+            </div>
+            <div class="character-card">
+                <img src="https://upload.wikimedia.org/wikipedia/en/c/c6/Jurassic_World_Dominion.png" alt="Dominion">
+                <h3>Dominion (2022)</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Dinosaurs -->
+    <section id="dinosaurs" class="section">
+        <h2>Featured Dinosaurs</h2>
+        <div class="character-grid">
+            <div class="character-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tyrannosaurus_Rex_Holotype.jpg" alt="T-Rex">
+                <h3>Tyrannosaurus Rex</h3>
+            </div>
+            <div class="character-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Velociraptor_dinoguy2.jpg" alt="Velociraptor">
+                <h3>Velociraptor</h3>
+            </div>
+            <div class="character-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Triceratops_BW.jpg" alt="Triceratops">
+                <h3>Triceratops</h3>
+            </div>
+            <div class="character-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Spinosaurus_by_Marco_Auditore.jpg" alt="Spinosaurus">
+                <h3>Spinosaurus</h3>
+            </div>
+            <div class="character-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Indoraptor_JWFK.png" alt="Indoraptor">
+                <h3>Indoraptor</h3>
+            </div>
+            <div class="character-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Mosasaurus_by_Durbed.jpg" alt="Mosasaurus">
+                <h3>Mosasaurus</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Jurassic World Fan Page</p>
+    </footer>
+
+</body>
+</html>
